@@ -143,10 +143,10 @@ export function parseChainId(url: URL): ChainId {
   if (
     url.hostname === "localhost" ||
     url.hostname === "127.0.0.1" ||
-    url.hostname === "0.0.0.0"   ||
+    url.hostname === "0.0.0.0" ||
     url.hostname.endsWith("github.dev")
   ) {
-    if(url.hostname.endsWith("github.dev")){
+    if (url.hostname.endsWith("github.dev")) {
       return shortString.encodeShortString("KATANA") as ChainId;
     }
     // Check if we're in a browser environment
