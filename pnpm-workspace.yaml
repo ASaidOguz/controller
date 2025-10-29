@@ -2,6 +2,7 @@ packages:
   - examples/next
   - examples/node
   - examples/svelte
+  - examples/dojo-intro/client
   - packages/*
 catalog:
   "@cartridge/arcade": "0.3.5"
