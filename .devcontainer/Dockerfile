@@ -40,13 +40,12 @@ RUN bash -c ". $ASDF_DIR/asdf.sh \
 # 6. Install Node.js and StarkNet Devnet via asdf
 RUN bash -c ". $ASDF_DIR/asdf.sh \
     && asdf plugin add nodejs \
-    && asdf install nodejs latest \
-    && asdf global nodejs latest"
+    && asdf install nodejs v20.11.1 \
+    && asdf global nodejs v20.11.1"
 
 # 7. Install npm latest and pnpm latest
 RUN bash -c ". $ASDF_DIR/asdf.sh \
-    && npm install -g npm@latest \
-    && npm install -g pnpm@latest"
+            && npm install -g pnpm@latest"
 
 # 8. Verify installs
 RUN bash -c "source ~/.bashrc \
